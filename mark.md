@@ -40,4 +40,26 @@ Ref. 3004 MDI Terms and Definitions Rev. 2
 
 ### Software  
 
-Software
+|Software|Version/description|
+|---|---|
+|[git](https://git-scm.com/)|Used for version management. Version 2.50.1 was used to prepare instructions.|
+|DesignPlex repositories hosted on [Bitbucket](https://bitbucket.org/)|Production firmware on main branch.|
+|[repo](https://bitbucket.org/designplexbiomedical/xavier_production/src/main/)|The link to the production branch of firmware.|
+
+Git hashes corresponding to specific PVNs can be found in 4035 MDI Firmware Changelog.
+
+### Tools and Equipment
+
+|Equipment ID|Description|
+|---|---|
+|EQ-010|Segger J-Link probe. Used to flash and debug firmware.|
+||Computer capable of running software as detailed in Section XX.X|
+||Assembled MDI production board with case unscrewed and programming header exposed.|
+
+### Roles, Responsibilities, and Authorities
+
+The following are the roles and assigned responsibilities for the MDI project.
+
+|Role|Responsibility|
+|---|---|
+|Engineering|Create and deploy the released build onto the target hardware|
