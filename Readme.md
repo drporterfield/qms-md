@@ -9,7 +9,8 @@ brew tap kovetskiy/mark
 brew install mark
 ```
 
-Create a *non-scoped* API key for confluence cloud using instructions [https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
+Create a *non-scoped* API key for confluence cloud using instructions
+[https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)
 
 While typically using scopes is better, I have not gotten scoped tokens to work.
 
