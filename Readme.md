@@ -22,7 +22,7 @@ password = "api-key-for-confluence-cloud"
 base-url = "https://bridgesourcemedical.atlassian.net/wiki"
 title-from-h1 = true
 drop-h1 = true
-space = "Space within Confluence to publish to" // example: UMDI (use the space "key")
+space = "UMDI" 
 ```
 
 If the default location is not recognized, you can put it anywhere, but you'll need to call it out with
