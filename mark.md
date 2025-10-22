@@ -1,4 +1,5 @@
 # MDI 15.03 Firmware Installation Instruction
+
 <!-- Macro: :box:([^:]+):([^:]*):(.+):
      Template: ac:box
      Icon: true
@@ -11,4 +12,6 @@
 :box:note::Foobar:
 :box:warning:Alert!:Foobar: -->
 
-## 
+## This is a heading
+
+This is under the heading.

@@ -1,7 +1,9 @@
 # Installation
 
 ## Quickstart
+
 If you have homebrew installed, 
+
 ```
 brew tap kovetskiy/mark
 brew install mark
@@ -22,11 +24,13 @@ title-from-h1 = true
 drop-h1 = true
 space = "Space within Confluence to publish to" // example: UMDI (use the space "key")
 ```
+
 If the default location is not recognized, you can put it anywhere, but you'll need to call it out with 
 
 ```
 mark -c "/Users/johnporterfield/Library/Application\ Support/mark.toml" -f "test.md"
 ```
+
 for example. 
 
 By default, the first level heading will be the title of the page. You'll want to specify the space's name (also known as the "key"), so that mark will know where to put it. 
