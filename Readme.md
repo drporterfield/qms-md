@@ -1,6 +1,6 @@
-## Installation
+# Installation
 
-### Quickstart
+## Quickstart
 If you have homebrew installed, 
 ```
 brew tap kovetskiy/mark
@@ -17,8 +17,7 @@ Create a configuration file, and place it in ~/Library/Application\ Support/mark
 ```
 username = "your-email"
 password = "api-key-for-confluence-cloud"
-# If you are using Confluence Cloud add the /wiki suffix to base_url
-base-url = "http://confluence.local"
+base-url = "https://bridgesourcemedical.atlassian.net/wiki"
 title-from-h1 = true
 drop-h1 = true
 space = "Space within Confluence to publish to" // example: UMDI (use the space "key")
@@ -30,4 +29,4 @@ mark -c "/Users/johnporterfield/Library/Application\ Support/mark.toml" -f "test
 ```
 for example. 
 
-By default, the first level heading will be the title of the page. You'll want to specify the space 
+By default, the first level heading will be the title of the page. You'll want to specify the space's name (also known as the "key"), so that mark will know where to put it. 
