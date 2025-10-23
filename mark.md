@@ -101,7 +101,7 @@ These steps are repeated for each MDI device in sequence.
 
 |Instructions|Images|
 |---|---|
-||![screenshot](img/image.png)<!-- width=100 -->|
+||![screenshot](img/image.png)<!-- width=200 -->|
 
 ### 6.4 Inspection
 
