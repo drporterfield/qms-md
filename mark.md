@@ -68,6 +68,36 @@ The following are the roles and assigned responsibilities for the MDI project.
 
 ### 5.4 Environment and Facilities
 
+These procedures assume an electrical engineer’s workbench with a non-conducting top is being used, similar to those at BridgeSource Medical Headquarters. Standard mains power for the computer is recommended but not essential for laptop devices.
+
 ## 6 Process Steps
 
-## 6.1 Setups
+These procedures assume an electrical engineer’s workbench with a non-conducting top is being used, similar to those at BridgeSource Medical Headquarters. Standard mains power for the computer is recommended but not essential for laptop devices.
+
+The steps required to flash the MDI device firmware to each microcontroller are:
+
+1. Setup
+2. Download and verify the STM32 firmware and associated libraries
+3. Build, flash, and debug STM32 device firmware
+4. Inspection
+5. Product handling
+
+These steps are repeated for each MDI device in sequence.
+
+### 6.1 Setup
+
+### 6.2 Download and verify the STM32 firmware and associated libraries
+
+### 6.3 Build, flash, and debug STM32 device firmware
+
+### 6.4 Inspection
+
+### 6.5 Product handling
+
+## 7 Change History
+
+## 8 Attachments
+
+NOT CONTROLLED WHEN PRINTED
+
+CONFIDENTIAL
