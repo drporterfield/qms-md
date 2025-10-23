@@ -7,6 +7,11 @@
      Title: ${2}
      Body: ${3} -->
 
+<!-- Macro: \!\[.*\]\((.+)\)\<\!\-\- width=(.*) \-\-\>
+     Template: ac:image
+     Attachment: ${1}
+     Width: ${2} -->
+
 <!-- :box:info::Foobar:
 :box:tip:Tip of day:Foobar:
 :box:note::Foobar:
@@ -88,11 +93,27 @@ These steps are repeated for each MDI device in sequence.
 
 ### 6.2 Download and verify the STM32 firmware and associated libraries
 
+|Instructions|Images|
+|---|---|
+|||
+
 ### 6.3 Build, flash, and debug STM32 device firmware
+
+|Instructions|Images|
+|---|---|
+||![screenshot](img/image.png)<!-- width=100 -->|
 
 ### 6.4 Inspection
 
+|Instructions|Images|
+|---|---|
+|||
+
 ### 6.5 Product handling
+
+|Instructions|Images|
+|---|---|
+|||
 
 ## 7 Change History
 
