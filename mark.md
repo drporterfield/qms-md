@@ -1,4 +1,4 @@
-# MDI 15.03 Firmware Installation Instruction
+# MDI 15.03 Firmware Installation Work Instruction
 
 <!-- Macro: :box:([^:]+):([^:]*):(.+):
      Template: ac:box
@@ -6,6 +6,11 @@
      Name: ${1}
      Title: ${2}
      Body: ${3} -->
+
+<!-- Macro: \!\[.*\]\((.+)\)\<\!\-\- width=(.*) \-\-\>
+     Template: ac:image
+     Attachment: ${1}
+     Width: ${2} -->
 
 <!-- :box:info::Foobar:
 :box:tip:Tip of day:Foobar:
@@ -18,7 +23,7 @@
 
 This work instruction is scoped to include how to download, verify the correct download, compilation, and flashing of the STM32 and MAX32660 microcontrollers on the MDI 15.03 prototype hardware with firmware. How to ensure you have properly configured and functional tools or equipment, how to set the bootloader pin necessary for remote flashing the firmware, and how to verify proper functionality of the final device is discussed elsewhere.
 
-This work instruction applies to the MDI 15.03 Prototype Version Numbers, and describes tools and equipment available at BridgeSource Medical Corp headquarters, 3301 Northland Dr. Suite 214, Austin, TX 78731.
+This work instruction applies to the MDI 15.03 Production Version Numbers, and describes tools and equipment available at BridgeSource Medical Corp headquarters, 3301 Northland Dr. Suite 214, Austin, TX 78731.
 
 ## 2 Purpose
 
@@ -44,6 +49,9 @@ The purpose of this production process is to describe how to download, verify do
 |[git](https://git-scm.com/)|Used for version management. Version 2.50.1 was used to prepare instructions.|
 |DesignPlex repositories hosted on [Bitbucket](https://bitbucket.org/)|Production firmware on main branch.|
 |[repo](https://bitbucket.org/designplexbiomedical/xavier_production/src/main/)|The link to the production branch of firmware.|
+|[IAR Embedded Workbench](https://www.iar.com/embedded-development-tools/iar-embedded-workbench)|Integrated Development Environment including toolchain.|
+|[VS Code](https://code.visualstudio.com/)|Optional: For developing off-Windows, or for flashing production firmware with no development.|
+|[Segger J-Link Software](https://www.segger.com/downloads/jlink/)|Software to use the Segger J-Link Plus EQ-010|
 
 Git hashes corresponding to specific PVNs can be found in 4035 MDI Firmware Changelog.
 
@@ -52,7 +60,7 @@ Git hashes corresponding to specific PVNs can be found in 4035 MDI Firmware Chan
 |Equipment ID|Description|
 |---|---|
 |EQ-010|Segger J-Link probe. Used to flash and debug firmware.|
-||Computer capable of running software as detailed in the [Software](#51-software) section|
+||Windows Computer capable of running software as detailed in the [Software](#51-software) section|
 ||Assembled MDI production board with case unscrewed and programming header exposed.|
 
 ### 5.3 Roles, Responsibilities, and Authorities
@@ -65,6 +73,52 @@ The following are the roles and assigned responsibilities for the MDI project.
 
 ### 5.4 Environment and Facilities
 
+These procedures assume an electrical engineer’s workbench with a non-conducting top is being used, similar to those at BridgeSource Medical Headquarters. Standard mains power for the computer is recommended but not essential for laptop devices.
+
 ## 6 Process Steps
 
-## 6.1 Setups
+These procedures assume an electrical engineer’s workbench with a non-conducting top is being used, similar to those at BridgeSource Medical Headquarters. Standard mains power for the computer is recommended but not essential for laptop devices.
+
+The steps required to flash the MDI device firmware to each microcontroller are:
+
+1. Setup
+2. Download and verify the STM32 firmware and associated libraries
+3. Build, flash, and debug STM32 device firmware
+4. Inspection
+5. Product handling
+
+These steps are repeated for each MDI device in sequence.
+
+### 6.1 Setup
+
+### 6.2 Download and verify the STM32 firmware and associated libraries
+
+|Instructions|Images|
+|---|---|
+|||
+
+### 6.3 Build, flash, and debug STM32 device firmware
+
+|Instructions|Images|
+|---|---|
+||![screenshot](img/image.png)<!-- width=100 -->|
+
+### 6.4 Inspection
+
+|Instructions|Images|
+|---|---|
+|||
+
+### 6.5 Product handling
+
+|Instructions|Images|
+|---|---|
+|||
+
+## 7 Change History
+
+## 8 Attachments
+
+NOT CONTROLLED WHEN PRINTED
+
+CONFIDENTIAL
