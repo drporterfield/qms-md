@@ -1,4 +1,4 @@
-# MDI 15.03 Firmware Installation Work Instruction
+# 3019 MDI 15.XX Firmware Installation Work Instruction
 
 <!-- Macro: :box:([^:]+):([^:]*):(.+):
      Template: ac:box
@@ -21,13 +21,13 @@
 
 ## 1 Scope
 
-This work instruction is scoped to include how to download, verify the correct download, compilation, and flashing of the STM32 microcontrollers on the MDI 15.03 prototype hardware with firmware. How to ensure you have properly configured and functional tools or equipment, how to set the bootloader pin necessary for remote flashing the firmware, and how to verify proper functionality of the final device is discussed elsewhere.
+This work instruction is scoped to include downloading, compilation, and flashing of the STM32 microcontrollers on the MDI 15.XX prototype hardware with firmware (15.03 is used in examples). How to ensure you have properly configured and functional tools or equipment, how to set the bootloader pin necessary for remote flashing the firmware, and how to verify proper functionality of the final device is discussed elsewhere.
 
 This work instruction applies to the MDI 15.XX Production Version Numbers, and describes tools and equipment available at BridgeSource Medical Corp headquarters, 3301 Northland Dr. Suite 214, Austin, TX 78731.
 
 ## 2 Purpose
 
-The purpose of this production process is to describe how to download, verify download, compile, and flash the STM32 microcontroller on the MDI 14.XX prototype with production firmware.
+The purpose of this production process is to describe how to download, verify download, compile, and flash the STM32 microcontroller on the MDI 15.XX prototype with production firmware.
 
 ## 3 Definitions
 
@@ -36,7 +36,7 @@ The purpose of this production process is to describe how to download, verify do
 
 ## 4 References
 
-- 3017 MDI Prototype 14.XX Hardware Assembly Work Instruction
+- 3017 MDI Prototype 15.XX Hardware Assembly Work Instruction
 - 4009 Equipment Log Rev. 3
 - 4035 MDI Firmware Changelog Rev. 2
 
