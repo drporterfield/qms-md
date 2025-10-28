@@ -102,18 +102,21 @@ Ensure the equipment in the tools and equipment list is available and have been 
 
 |Instructions|Images|
 |---|---|
-|Clone the STM32 firmware repository to a local folder using the following command: </br>`git clone <https://gitlab.com/bridgesource/umdi-firmware-stm32.git>`||
-|Then, navigate to the folder using the following command: </br> `cd umdi-firmware-stm32`|![terminal](XXX.png)|
-|Open EWARM||
-|Import the project||
-|Select the J-Link Probe||
+|Navigate to the Xavier Repository at [Bitbucket](https://bitbucket.org/designplexbiomedical/xavier_production/) in your favorite browser. This repository requires access rights granted by DesignPlex Biomedical.|![DesignPlex Biomedical Repository](/screenshots/120719.png)<!-- width=250 -->|
+|Find the tag of the commit you would like to install on the MDI.|![Tag location 15.03](/screenshots/111703.png)<!-- width=250 -->|
+|checkout the proper tag in the development machine using Git Bash (this example uses version 3.7.7). To accomplish this, type `git checkout 15.03` in the chosen directory (here we choose `~/repos/xavier-production-1`).|![Check out software](/screenshots/112105.png)|
+|Open IAR Workbench (Here we use v. 9.60.3). Go to <\br> File > Open Workspace|![IAR Workbench Load Project](/screenshots/112405.png)<!-- width=250 -->|
+|Navigate to Project.eww (the project file). Here it has a logo of IAR Workbench. This will load all of the code into the workspace.|![Project File *.eww](/screenshots/112552.png)<!-- width=250 -->|
+|Configure the project to use the J-Link, by navigating to <\ br> Project > Options|![Project>Options then J-link](/screenshots/113000.png)<!-- width=250 -->|
+
 
 ### 6.3 Build, flash, and debug STM32 device firmware
 
 |Instructions|Images|
 |---|---|
-|Open the firmware||
-|Build and Flash the firmware||
+|Connect the J-link to the test unit and to the computer. Ensure both are receiving power by confirming there are two green lights are on. You may need to depress the button on the MDI to get the power on the MDI to turn on. ||
+|Build and Flash the firmware. This button both compiles, and loads the firmware on the MDI if properly referenced in the [Download](#62-download-and-verify-the-stm32-firmware-and-associated-libraries) section.|![Build and Flash](/screenshots/113243.png)<!-- width=250 -->|
+|Stop the debugging process. This simply exits the debugger. Now everything can be unplugged, and the MDI firmware is loaded and ready for testing.|![Stop](/screenshots/113538.png)<!-- width=250 -->|
 
 ### 6.4 Inspection
 
