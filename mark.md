@@ -46,10 +46,10 @@ The purpose of this production process is to describe how to download, verify do
 
 |Software|Version/description|
 |---|---|
-|[git](https://git-scm.com/)|Used for version management. Version 2.50.1 was used to prepare instructions.|
+|[git](https://git-scm.com/)|Used for version management. Many different clients exist, but Git Bash for Windows v. 3.7.7. was used to prepare instructions.|
 |DesignPlex repositories hosted on [Bitbucket](https://bitbucket.org/)|Production firmware on main branch.|
 |[repo](https://bitbucket.org/designplexbiomedical/xavier_production/src/main/)|The link to the production branch of firmware.|
-|[IAR Embedded Workbench](https://www.iar.com/embedded-development-tools/iar-embedded-workbench)|Integrated Development Environment including toolchain.|
+|[IAR Embedded Workbench](https://www.iar.com/embedded-development-tools/iar-embedded-workbench)|Integrated Development Environment including toolchain. Version 9.60.3 was used to prepare instructions.|
 |[VS Code](https://code.visualstudio.com/)|Optional: For developing off-Windows, or for flashing production firmware with no development.|
 |[Segger J-Link Software](https://www.segger.com/downloads/jlink/)|Software to use the Segger J-Link Plus EQ-010|
 
@@ -104,11 +104,10 @@ Ensure the equipment in the tools and equipment list is available and have been 
 |---|---|
 |Navigate to the Xavier Repository at [Bitbucket](https://bitbucket.org/designplexbiomedical/xavier_production/) in your favorite browser. This repository requires access rights granted by DesignPlex Biomedical.|![DesignPlex Biomedical Repository](/screenshots/120719.png)<!-- width=250 -->|
 |Find the tag of the commit you would like to install on the MDI.|![Tag location 15.03](/screenshots/111703.png)<!-- width=250 -->|
-|checkout the proper tag in the development machine using Git Bash (this example uses version 3.7.7). To accomplish this, type `git checkout 15.03` in the chosen directory (here we choose `~/repos/xavier-production-1`).|![Check out software](/screenshots/112105.png)|
+|checkout the proper tag in the development machine using Git Bash (this example uses version 3.7.7). To accomplish this, type `git checkout 15.03` in the chosen directory (here we choose `~/repos/xavier-production-1`).|![Check out software](/screenshots/112105.png)<!-- width=250 -->|
 |Open IAR Workbench (Here we use v. 9.60.3). Go to <\br> File > Open Workspace|![IAR Workbench Load Project](/screenshots/112405.png)<!-- width=250 -->|
 |Navigate to Project.eww (the project file). Here it has a logo of IAR Workbench. This will load all of the code into the workspace.|![Project File *.eww](/screenshots/112552.png)<!-- width=250 -->|
 |Configure the project to use the J-Link, by navigating to <\ br> Project > Options|![Project>Options then J-link](/screenshots/113000.png)<!-- width=250 -->|
-
 
 ### 6.3 Build, flash, and debug STM32 device firmware
 
@@ -121,10 +120,6 @@ Ensure the equipment in the tools and equipment list is available and have been 
 ### 6.4 Inspection
 
 Inspection procedures will vary depending on the version of the firmware installed. Expected behavior should be confirmed.
-
-|Instructions|Images|
-|---|---|
-|Inspect the checksum and verify.||
 
 ### 6.5 Product handling
 
