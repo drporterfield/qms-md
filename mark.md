@@ -21,9 +21,9 @@
 
 ## 1 Scope
 
-This work instruction is scoped to include how to download, verify the correct download, compilation, and flashing of the STM32 and MAX32660 microcontrollers on the MDI 15.03 prototype hardware with firmware. How to ensure you have properly configured and functional tools or equipment, how to set the bootloader pin necessary for remote flashing the firmware, and how to verify proper functionality of the final device is discussed elsewhere.
+This work instruction is scoped to include how to download, verify the correct download, compilation, and flashing of the STM32 microcontrollers on the MDI 15.03 prototype hardware with firmware. How to ensure you have properly configured and functional tools or equipment, how to set the bootloader pin necessary for remote flashing the firmware, and how to verify proper functionality of the final device is discussed elsewhere.
 
-This work instruction applies to the MDI 15.03 Production Version Numbers, and describes tools and equipment available at BridgeSource Medical Corp headquarters, 3301 Northland Dr. Suite 214, Austin, TX 78731.
+This work instruction applies to the MDI 15.XX Production Version Numbers, and describes tools and equipment available at BridgeSource Medical Corp headquarters, 3301 Northland Dr. Suite 214, Austin, TX 78731.
 
 ## 2 Purpose
 
@@ -60,8 +60,11 @@ Git hashes corresponding to specific PVNs can be found in 4035 MDI Firmware Chan
 |Equipment ID|Description|
 |---|---|
 |EQ-010|Segger J-Link probe. Used to flash and debug firmware.|
+|70-00021|Rev. E MDI PCBA, Xavier|
+|98-00127|Rev. A Battery Assembly, Xavier|
+|99-00045|Rev. A MDI Assembly|
+|G00279|Rev. 0 Test Fixture, Xavier|
 ||Windows Computer capable of running software as detailed in the [Software](#51-software) section|
-||Assembled MDI production board with case unscrewed and programming header exposed.|
 
 ### 5.3 Roles, Responsibilities, and Authorities
 
@@ -70,6 +73,8 @@ The following are the roles and assigned responsibilities for the MDI project.
 |Role|Responsibility|
 |---|---|
 |Engineering|Create and deploy the released build onto the target hardware|
+|Quality Assurance|Ensure that the released build follows a documented and repeatable process for maintaining consistent deployment. Assist in establishing traceability and documentation for build processes.|
+|Project Lead|Give final approval for release of flashed hardware.|
 
 ### 5.4 Environment and Facilities
 
@@ -91,34 +96,47 @@ These steps are repeated for each MDI device in sequence.
 
 ### 6.1 Setup
 
+Ensure the equipment in the tools and equipment list is available and have been set up per their tooling specification.
+
 ### 6.2 Download and verify the STM32 firmware and associated libraries
 
 |Instructions|Images|
 |---|---|
-|||
+|Clone the STM32 firmware repository to a local folder using the following command: </br>`git clone <https://gitlab.com/bridgesource/umdi-firmware-stm32.git>`||
+|Then, navigate to the folder using the following command: </br> `cd umdi-firmware-stm32`|![terminal](XXX.png)|
+|Open EWARM||
+|Import the project||
+|Select the J-Link Probe||
 
 ### 6.3 Build, flash, and debug STM32 device firmware
 
 |Instructions|Images|
 |---|---|
-|Test Screenshot|![screenshot](image.png)|
+|Open the firmware||
+|Build and Flash the firmware||
 
 ### 6.4 Inspection
 
+Inspection procedures will vary depending on the version of the firmware installed. Expected behavior should be confirmed.
+
 |Instructions|Images|
 |---|---|
-|||
+|Inspect the checksum and verify.||
 
 ### 6.5 Product handling
 
-|Instructions|Images|
-|---|---|
-|||
+This work instruction is for use on prototype devices and production devices. For all production devices, a record will be made of the serial number of each prototype MDI device and the firmware installed upon it. Because development devices may require rapid iteration, documentation of installation of firmware versions on board hardware is only required for formal testing, or for production devices.
 
 ## 7 Change History
+
+|Revision|Revision Description|Effective On|Approved By|Date|
+|---|---|---|---|---|
+|1|||QA, Project Lead, Software Lead||
 
 ## 8 Attachments
 
 NOT CONTROLLED WHEN PRINTED
 
+<div style="text-align: right;">
 CONFIDENTIAL
+</div>
