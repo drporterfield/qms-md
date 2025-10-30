@@ -113,7 +113,7 @@ Ensure the equipment in the tools and equipment list is available and have been 
 
 |Instructions|Images|
 |---|---|
-|Connect the J-link to the test unit and to the computer. Ensure both are receiving power by confirming there are two green lights are on. You may need to depress the button on the MDI to get the power on the MDI to turn on. ||
+|Connect the J-link to the test unit and to the computer. Ensure both are receiving power by confirming there are two green lights are on. You may need to depress the button on the MDI (pointed to) to get the power on the MDI to turn on. |![Connections and verification](/screenshots/113301.jpg) |
 |Build and Flash the firmware. This button both compiles, and loads the firmware on the MDI if properly referenced in the [Download](#62-download-and-verify-the-stm32-firmware-and-associated-libraries) section.|![Build and Flash](/screenshots/113243.png) |
 |Stop the debugging process. This simply exits the debugger. Now everything can be unplugged, and the MDI firmware is loaded and ready for testing.|![Stop](/screenshots/113538.png) |
 
