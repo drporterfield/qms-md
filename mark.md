@@ -21,7 +21,7 @@
 
 ## 1 Scope
 
-This work instruction is scoped to include downloading, compilation, and flashing of the STM32 microcontrollers on the MDI 15.XX prototype hardware with firmware (15.03 is used in examples). How to ensure you have properly configured and functional tools or equipment, how to set the bootloader pin necessary for remote flashing the firmware, and how to verify proper functionality of the final device is discussed elsewhere.
+This work instruction is scoped to include downloading, compilation, and flashing of the STM32 microcontrollers on the MDI 15.XX prototype hardware with firmware (15.03 is used in examples). How to ensure you have properly configured and functional toools or equipment, how to set the bootloader pin necessary for remote flashing the firmware, and how to verify proper functionality of the final device is discussed elsewhere.
 
 This work instruction applies to the MDI 15.XX Production Version Numbers, and describes tools and equipment available at BridgeSource Medical Corp headquarters, 3301 Northland Dr. Suite 214, Austin, TX 78731.
 
